@@ -9,9 +9,11 @@
 		height: 150px;
 		border: 1px solid red;
 		display: inline-block;
+		box-sizing: border-box;
+
 	}
 	body{
-		padding-bottom: 50em;
+		padding-bottom: 150em;
 		text-align: center;
 	}
 
@@ -19,10 +21,10 @@
 		background-color:red;
 	}
 	.bg-image{
-		background-image: url(images/grupoPerros.jfif);
+		background-image: url(images/homero.png);
 	}
 	.bg-size{
-		background-image: url(images/grupoPerros.jfif);
+		background-image: url(images/homero.png);
 
 		/*se ajusta la imagen sin deformarse si no cabe se sale
 		background-size:cover;
@@ -40,7 +42,7 @@
 		
 	}
 	.bg-repeat{
-		background-image: url(images/grupoPerros.jfif);
+		background-image: url(images/homero.png);
 		background-size: 60%;
 		/*no-repeat no se repite
 		background-repeat: no-repeat;
@@ -54,7 +56,7 @@
 		*/
 	}
 	.bg-position{
-		background-image: url(images/grupoPerros.jfif);
+		background-image: url(images/homero.png);
 		background-size: 60%;
 		background-repeat: no-repeat;
 		/*posiciona la imagen*/
@@ -65,21 +67,66 @@
 
 
 	}
+	.bg-clip{
+		border:10px dotted red;
+		background-size: contain;
+				background-image: url(images/homero.png);
+
+		/*
+		background-clip: content-box;
+		*/
+		/*
+		background-clip:border-box;
+		*/
+		background-clip: padding-box;
+		padding: 20px;
+
+
+	}
+
+	.bg-origin{
+		border:10px dotted red;
+		background-size: contain;
+		background-image: url(images/homero.png);
+
+		/*
+		background-clip: content-box;
+		*/
+		/*
+		background-clip:border-box;
+		*/
+		background-origin: : padding-box;
+		padding: 20px;
+		background-repeat: no-repeat;
+
+	}
+
+	.bg-attachment{
+		width: 100%;
+		height: 400px;
+		background-image: url(images/homero.png);
+		background-attachment: fixed;
+	
+	}
 </style>
 </head>
 <body>
+
+	<!--
 	<h1>Backgrounds</h1>
-	<div class="bg-color"></div>
-	<div class="bg-image"></div>
-	<div class="bg-size"></div>
+	<div class="bg-color">contenido</div>
+	<div class="bg-image">contenido</div>
+	<div class="bg-size">contenido</div>
 
-	<div class="bg-repeat"></div>
-	<div class="bg-position"></div>
+	<div class="bg-repeat">contenido</div>
+	<div class="bg-position">contenido</div>
+	
 	<div class="bg-origin">contenido</div>
-	<div class="bg-clip"></div>
-	<div class="bg-multiple"></div>
+	<div class="bg-clip">contenido</div>
+	<div class="bg-multiple">contenido</div>
+-->
 
-	<div class="bg-attachment"></div>
+	<div class="bg-attachment">contenido</div>
 
 
 
