@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .img{
+            width: 100%;
+        }
+        .img-2{
+            
+            width: 300px;
+            height: 500px;
+            background-color: coral;
+            /*Se ajusta la imagen para no deformarse*/
+            
+            /* object-fit: contain; */
+
+            
+            /*la imagen crece para rellenar todo el contenedor parece que hace zoom*/
+            
+            object-fit: cover; 
+
+            /*imagen en tamaño original y solo muestra lo que cabe*/
+            /* object-fit: none; */
+            /*aplica el menor entre none y contain*/
+            /* object-fit: scale-down; */
+
+            /*empieza a contar desde donde verse la foto*/
+            object-position: right;
+            transition: object-position 2s;
+        }
+
+        .img-2:hover{
+            object-position: center;
+        }
+    </style>
+</head>
+<body>
+    
+        <img src="/images/tecno.png" alt="" class="img">
+    
+        <img src="/images/tecno.png" alt="" class="img-2">
+
+   
+
+</body>
+</html>
