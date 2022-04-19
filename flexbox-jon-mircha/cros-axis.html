@@ -26,35 +26,22 @@
             display: flex;
         }
         
+        .section-1 {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        
         .section-2 {
-            /*valor predetermido row*/
-            flex-direction: column;
-            align-items: center;
-            /* justify-content: space-evenly; */
+            align-items: flex-end;
         }
         
         .section-3 {
-            /*valor predetermido row*/
-            flex-direction: row-reverse;
+            /* align-items: center; */
+            text-align: center;
         }
         
         .section-4 {
-            /*valor predetermido row*/
-            flex-direction: column-reverse;
-        }
-        
-        .section-5 {
-            /*valor predetermido row*/
-            flex-direction: column;
-            /*wrap es para si los hijos tienen un ancho o alto se respeta y los demas se van a la siguiente fila*/
-            /*Define el comportamiento cuando ya no caben*/
-            flex-wrap: wrap;
-            /* min-height: 50em; */
-            /*Alineacion de los hijos de la caja flexible esta propiedad sigue a la direccion del main axis que lo determina el flex-wrap*/
-            /* justify-content: space-evenly; */
-            /* align-content: center; */
-            align-items: flex-start;
-            min-height: 10em;
+            align-items: center;
         }
         
         .article-item {
@@ -87,7 +74,6 @@
         <article class="article-item">flex item 1</article>
         <article class="article-item">flex item 2</article>
         <article class="article-item">flex item 3</article>
-        <article class="article-item">flex item 4</article>
         <article class="article-item">Lorem ipsum dolor sit amet.</article>
 
         <article class="article-item">flex item 6</article>
@@ -110,24 +96,16 @@
         <article class="article-item">flex item 2</article>
         <article class="article-item">flex item 3</article>
         <article class="article-item">flex item 4</article>
+        <article class="article-item">flex item 5</article>
+        <article class="article-item">flex item 6</article>
+        <article class="article-item">flex item 7</article>
+
         <article class="article-item">Lorem ipsum dolor sit amet.</article>
 
         <article class="article-item">flex item 6</article>
 
     </div>
-    <br>
-    <div class="section section-5">
-        <article class="article-item">flex item 1</article>
-        <article class="article-item">flex item 2</article>
-        <article class="article-item">flex item 3</article>
-        <article class="article-item">flex item 4</article>
-        <article class="article-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ducimus in ab vitae at doloremque voluptatibus impedit enim vero ullam.</article>
 
-        <article class="article-item">flex item 6</article>
-
-
-
-    </div>
 
 </body>
 
